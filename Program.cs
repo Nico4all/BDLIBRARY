@@ -9,7 +9,7 @@ namespace BDLIBRARY
         {
             using LibraryContext context = new LibraryContext();
 
-            /*Genero Triller = new Genero()
+            Genero Triller = new Genero()
             {
                 Description = "Este genero es de miedo y suspenso"
             };
@@ -21,9 +21,9 @@ namespace BDLIBRARY
             };
             context.Generos.Add(Suspenso);
 
-            context.SaveChanges();*/
+            context.SaveChanges();
 
-            /*Rol Usuario = new Rol()
+            Rol Usuario = new Rol()
             {
                 Name = "Usuario"
             };
@@ -35,14 +35,14 @@ namespace BDLIBRARY
             };
             context.Roles.Add(Administrador);
 
-            context.SaveChanges();*/
+            context.SaveChanges();
 
-            /*Book LaBallenaAzul = new Book()
+            Book LaBallenaAzul = new Book()
             {
                Titulo = "La ballena azul",
                Autor = "Sophies",
                Ano = new DateTime(2022, 1, 1),
-               GeneroId = 3
+               GeneroId = 1
             };
             context.Books.Add( LaBallenaAzul );
 
@@ -51,18 +51,18 @@ namespace BDLIBRARY
                 Titulo = "Metamorfosis",
                 Autor = "franz kafka",
                 Ano = new DateTime(1915, 1, 1),
-                GeneroId = 4
+                GeneroId = 2
             };
             context.Books.Add(Metamorfosis);
 
-            context.SaveChanges();*/
+            context.SaveChanges();
 
-            /*User Nico = new User()
+            User Nico = new User()
             {
                 Name = "Nico",
                 Email = "enicolassancheztobar@gmail.com",
                 Password = "QAZ3216*",
-                RolId = 3
+                RolId = 1
             };
             context.Users.Add(Nico);
 
@@ -71,18 +71,18 @@ namespace BDLIBRARY
                 Name = "Sofi",
                 Email = "sofipinzon@gmail.com",
                 Password = "QAZ3216*",
-                RolId = 4
+                RolId = 2
             };
             context.Users.Add(Sofi);
 
-            context.SaveChanges();*/
+            context.SaveChanges();
 
             Prestamo prestamo1 = new Prestamo()
             {
                 Inicio = new DateTime(2024, 5, 12),
                 Fin = new DateTime(2024, 6, 12),
-                UserId = 3,
-                BookId = 3
+                UserId = 1,
+                BookId = 1
             };
             context.Prestamos.Add(prestamo1);
 
@@ -90,8 +90,8 @@ namespace BDLIBRARY
             {
                 Inicio = new DateTime(2024, 5, 12),
                 Fin = new DateTime(2024, 6, 12),
-                UserId = 4,
-                BookId = 4
+                UserId = 2,
+                BookId = 2
             };
             context.Prestamos.Add(prestamo2);
 
